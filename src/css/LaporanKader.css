@@ -1,0 +1,55 @@
+.laporan-kader {
+    background: #C3D9D1;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+}
+
+.laporan-kader__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.laporan-kader__container .date-option {
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0D7C66;
+}
+
+.laporan-kader__container .date-option button {
+    color: #0D7C66;
+}
+
+.laporan-kader-export-btn__container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.export-csv__btn {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 15px;
+    background-color: #0D7C66;
+    color: #C3D9D1;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.export-csv__btn:hover {
+    opacity: 80%;
+}
+
+.export-csv__btn:active {
+    background-color: #086452;
+    color: #9BADA7;
+}
+
