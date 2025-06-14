@@ -23,4 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 
-Posyandu-API
+/Posyandu-API
