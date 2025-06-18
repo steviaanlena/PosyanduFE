@@ -1,13 +1,24 @@
 import axios from 'axios';
 
+// 🔍 DEBUG: Add console logs to see what's happening
+console.log('🔍 Environment Variables Debug:');
+console.log('NEXT_PUBLIC_API_URL:', process.env.NEXT_PUBLIC_API_URL);
+console.log('Node Environment:', process.env.NODE_ENV);
+
 // ✅ Base API URL from environment variable (with fallback for safety)
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, '') || 'http://localhost:5191';
 const API_URL = `${BASE_URL}/api/`;
+
+// 🔍 DEBUG: Log the final URLs
+console.log('🔍 Final URLs:');
+console.log('BASE_URL:', BASE_URL);
+console.log('API_URL:', API_URL);
 
 export const authService = {
   // 🔐 Register user
   register: async (userRegisterDto) => {
     try {
+      console.log('🔍 Making request to:', `${API_URL}auth/register`);
       const response = await axios.post(`${API_URL}auth/register`, userRegisterDto, {
         headers: { 'Content-Type': 'application/json' },
         timeout: 30000
@@ -22,6 +33,7 @@ export const authService = {
   // 👤 Login for kader
   loginKader: async (nik, password) => {
     try {
+      console.log('🔍 Making request to:', `${API_URL}auth/login/kader`);
       const response = await axios.post(`${API_URL}auth/login/kader`, { nik, password });
 
       if (response.data.success && response.data.data) {
@@ -37,6 +49,7 @@ export const authService = {
   // 👨‍👩‍👧 Login for orang tua
   loginOrtu: async (nik, password) => {
     try {
+      console.log('🔍 Making request to:', `${API_URL}auth/login/ortu`);
       const response = await axios.post(`${API_URL}auth/login/ortu`, { nik, password });
 
       if (response.data.success && response.data.data) {
@@ -67,6 +80,11 @@ export const authService = {
 // 🛡️ Centralized error handling
 const handleApiError = (error, defaultMessage = 'Terjadi kesalahan') => {
   console.error('API Error:', error);
+  console.error('🔍 Error details:', {
+    response: error.response?.data,
+    status: error.response?.status,
+    request: error.request ? 'Request made but no response' : 'No request made'
+  });
 
   if (error.response) {
     return {
