@@ -2,11 +2,10 @@ import axios from 'axios';
 
 // 🔍 DEBUG: Add console logs to see what's happening
 console.log('🔍 Environment Variables Debug:');
-console.log('REACT_APP_API_URL:', process.env.VITE_API_URL);
-console.log('Node Environment:', process.env.NODE_ENV);
+console.log('REACT_APP_API_URL:', import.meta.env.VITE_API_URL);
 
 // ✅ Base API URL from environment variable (with fallback for safety)
-const BASE_URL = process.env.VITE_API_URL?.replace(/\/$/, '') || 'http://localhost:5191';
+const BASE_URL = import.meta.env.VITE_API_URL?.replace(/\/$/, '') || 'http://localhost:5191';
 const API_URL = `${BASE_URL}/api/`;
 
 // 🔍 DEBUG: Log the final URLs
