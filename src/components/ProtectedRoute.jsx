@@ -15,11 +15,13 @@ export const ProtectedRoute = ({
   if (!currentUser) {
     return <Navigate to={redirectPath} replace />;
   }
-  
-  if (userType && currentUser.userType !== userType) {
-    // Redirect Kader users trying to access Ortu routes and vice versa
-    return <Navigate to={`/dashboard-${currentUser.userType.toLowerCase()}`} replace />;
+
+  if (
+    userType &&
+    currentUser.userType?.toLowerCase() !== userType.toLowerCase()
+  ) {
+    return <Navigate to={`/dashboard-${currentUser.userType?.toLowerCase()}`} replace />;
   }
-  
+
   return children ? children : <Outlet />;
 };
