@@ -1,0 +1,10 @@
+.profileIcon {
+    display: flex;
+    align-items: center;
+}
+
+.profileIcon img{
+    width: 50px;
+    cursor: pointer;
+}
+

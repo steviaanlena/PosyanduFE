@@ -1,0 +1,28 @@
+.informasiKesehatan {
+    background-image: linear-gradient(#fff 0%, #D0E8F4 100%);
+    height: 878px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.informasiKesehatan__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 120px;
+}
+
+.informasiKesehatan__container h1 {
+    font-size: 64px;
+    color: #1F9AB2;
+    font-weight: 800;
+}
+
+.isKartuInfo__container {
+    margin-top: 50px;
+    display: flex;
+    gap: 55px;
+}

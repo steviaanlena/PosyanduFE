@@ -1,0 +1,99 @@
+.container {
+    width: 100%;
+    min-height: 100%;
+    background-image: linear-gradient(#FFFFFF 0%, #7FB2C8 100%);
+    padding-bottom: 25px;
+}
+
+.articleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  padding-right: 300px;
+  padding-left: 300px;
+  margin-top: 125px;
+}
+
+.articleSubcontainer img{
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.articleSubcontainer h1 {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 1.2em;
+  width: 100%;
+  text-align: center;
+}
+
+.articleSubcontainer p{
+  margin-top: 1rem;
+  text-align: justify;
+  width: 100%;
+  font-size: 20px;
+}
+
+.articleSubcontainer h2 {
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin-top: 2rem;
+}
+.articleSubcontainer > ul, .articleSubcontainer > ol {
+  padding-left: 35px;
+  font-size: 20px;
+  margin-top: 1.5rem;
+}
+
+.articleSubcontainer h3 {
+  font-size: 23px;
+  margin-top: 1.5rem;
+  margin-bottom: -0.5rem;
+}
+
+.articleContainer a {
+  scroll-behavior: smooth;
+}
+
+.articleSubcontainer ul ul, .articleSubcontainer ol ol {
+  padding-left: 35px;
+  font-size: 20px;
+}
+
+.subList {
+  margin-top: 20px;
+}
+
+.table {
+  border-collapse: collapse;
+  color: white;
+}
+
+.tableContainer {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.table thead {
+  background-color: #162049;
+}
+
+.table tbody {
+  background-color: white;
+  color: black;
+}
+
+.table td, .table th {
+  padding: 10px 15px;
+  border-color: transparent;
+}
+
+.table tbody tr:nth-child(odd){
+  background-color: #f0f0f0;
+}

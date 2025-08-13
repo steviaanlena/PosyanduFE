@@ -1,0 +1,299 @@
+.halaman_riwayat_wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5faff;
+  
+}
+
+.halaman_riwayat_sidebar {
+  width: 200px;
+  background-color: #1F9AB2;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.halaman_riwayat_header_with_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.halaman_riwayat_ganti_anak_button {
+  background-color: #1F9AB2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 16px;
+}
+
+.halaman_riwayat_ganti_anak_button {
+  background-color: #1F9AB2;
+}
+
+
+.halaman_riwayat_button {
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #ffffff;
+  color: #1F9AB2;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.halaman_riwayat_button:hover {
+  background-color: #e6f7ff;
+}
+
+.active {
+  background-color: #162049;
+  color: white;
+}
+
+.halaman_riwayat_main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.halaman_riwayat_title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1F9AB2;
+  margin-bottom: 1rem;
+}
+
+.halaman_riwayat_semester {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #333;
+  font-weight: bold;
+}
+
+.riwayat_penimbangan_tabel_wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.riwayat_penimbangan_tabel {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.riwayat_penimbangan_tabel th,
+.riwayat_penimbangan_tabel td {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.riwayat_penimbangan_status {
+  font-weight: bold;
+  text-align: center;
+}
+
+.halaman_riwayat_penimbangan_pagination {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  font-weight: bold;
+  user-select: none;
+}
+
+.halaman_riwayat_penimbangan_pagination span{
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background-color: #e6f7ff;
+}
+
+.halaman_riwayat_penimbangan_page_active {
+  background-color: #0099ff;
+  color: white;
+}
+
+.hijau {
+  color: white;
+  background-color: #28a745;
+  border-radius: 6px;
+  padding: 4px 8px;
+  display: inline-block;
+}
+
+.kuning {
+  background-color: #ffc107;
+  color: black;
+}
+
+.merah {
+  background-color: #dc3545;
+  color: white;
+}
+
+.halaman_riwayat_gigi_centang {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.halaman_riwayat_gigi_tabel_wrapper {
+  margin-top: 2rem;
+}
+
+.halaman_riwayat_gigi_semester {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.halaman_riwayat_gigi_tabel {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.halaman_riwayat_gigi_tabel th,
+.halaman_riwayat_gigi_tabel td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.halaman_riwayat_gigi_tabel thead {
+  background-color: #ffffff;
+}
+
+.halaman_riwayat_gigi_pagination {
+  margin-top: 1rem; /* tambah jarak atas */
+  margin-bottom: 1rem; /* tambah jarak bawah supaya gak mepet ke bawah */
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  font-weight: bold;
+  user-select: none;
+}
+
+.halaman_riwayat_gigi_pagination span {
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background-color: #e6f7ff;
+}
+
+.halaman_riwayat_gigi_page_active {
+  background-color: #0099ff;
+  color: white;
+}
+
+.obat_cacing_tabel_wrapper {
+  margin-top: 20px;
+}
+
+.obat_cacing_semester {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.obat_cacing_tabel {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 10px;
+}
+
+.obat_cacing_tabel th,
+.obat_cacing_tabel td {
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.obat_cacing_status_button {
+  display: inline-block;
+  padding: 6px 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.obat_cacing_green {
+  background-color: #28a745; /* Hijau */
+}
+
+.obat_cacing_red {
+  background-color: #dc3545; /* Merah */
+}
+
+.halaman_riwayat_cacing_pagination{
+  margin-top: 1rem; /* tambah jarak atas */
+  margin-bottom: 1rem; /* tambah jarak bawah supaya gak mepet ke bawah */
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  font-weight: bold;
+  user-select: none;
+}
+
+.halaman_riwayat_cacing_pagination span{
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background-color: #e6f7ff;
+}
+
+.halaman_riwayat_cacing_page_active {
+  background-color: #0099ff;
+  color: white;
+}
+
+
+.halaman_riwayat_child_card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;       /* Lebar penuh container induk */
+  max-width: none;   /* Hilangkan batasan max-width */
+  box-sizing: border-box; /* pastikan padding masuk hitungan width */
+}
+
+.halaman_riwayat_child_photo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0; /* biar foto gak mengecil */
+}
+
+.halaman_riwayat_child_info {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.child_info_column {
+  flex: 1; /* dua kolom sama lebar */
+  min-width: 150px; /* supaya gak terlalu kecil */
+}
+
+.halaman_riwayat_child_info p {
+   margin: 8px 0; /* tambah jarak atas bawah */
+  font-size: 0.9rem;
+  color: #333;
+}

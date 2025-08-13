@@ -1,10 +1,10 @@
 import profileIcon from '../assets/profile.png'
-import '../css/ProfileIcon.css'
+import st from '../css/components/ProfileIcon.module.css'
 
 function ProfileIcon() {
   return (
     <>
-      <div className="profile-icon">
+      <div className={st.profileIcon}>
         <img src={profileIcon}/>
       </div>
     </>

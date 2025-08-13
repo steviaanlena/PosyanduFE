@@ -1,0 +1,98 @@
+.laporanKader {
+    background: #C3D9D1;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+}
+
+.laporanKader_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.dateOption {
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0D7C66;
+}
+
+.dateOption button {
+    color: #0D7C66;
+}
+
+.exportCsv_container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.exportCsv_btn {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 15px;
+    background-color: #0D7C66;
+    color: #C3D9D1;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.exportCsv_btn:hover {
+    opacity: 80%;
+}
+
+.exportCsv_btn:active {
+    background-color: #086452;
+    color: #9BADA7;
+}
+
+.tableKader {
+    border-collapse: collapse;
+    min-width: 1000px;
+}
+
+.tableKader thead tr{
+    background-color: #0d6c66;
+    color: #fff;
+}
+
+.tableKader th, table td {
+    padding: 15px 0;
+    border: 1px solid #000;
+}
+
+.tableKader tbody tr td {
+    background-color: #6a9c89;
+    color: #fff;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.monthSelector__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.button {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 24px;
+    width: 40px;
+    text-align: center;
+}
+
+.month {
+    min-width: 20px;
+    text-align: center;
+}

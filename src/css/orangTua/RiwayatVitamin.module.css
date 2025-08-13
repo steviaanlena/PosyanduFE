@@ -1,0 +1,192 @@
+:global(body) {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #d0e8f4;
+}
+
+.laporan-vitamin-container {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 20px 40px;
+  border-bottom: 4px solid #9722b3;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #162049;
+}
+
+.nav-links :global(.active) {
+  color: #2aaf99;
+  border-bottom: 2px solid #2aaf99;
+}
+
+.profile-icon {
+  color: #162049;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.content {
+  display: flex;
+  padding: 40px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-right: 40px;
+}
+
+.sidebar-btn {
+  background: #038fa6;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sidebar-btn:hover,
+.sidebar-btn:global(.active) {
+  background: linear-gradient(to right, #2aaf99, #08789e);
+}
+
+.main-content {
+  flex: 1;
+  background-color: #d0e8f4;
+}
+
+.main-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #162049;
+}
+
+.vitamin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.vitamin-table th,
+.vitamin-table td {
+  border: 1px solid #35bde5;
+  padding: 10px;
+  text-align: center;
+  background: #8feeff;
+  font-weight: bold;
+}
+
+.vitamin-table th {
+  background: #028fbb;
+  color: white;
+}
+
+.toggle-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 25px;
+  background: #35bde5;
+  color: #162049;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: #2da6cc;
+}
+
+.profile-box {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #0d99aa, #1e6fa2);
+  border-radius: 25px;
+  padding: 20px;
+  color: white;
+}
+
+.foto-anak {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.info-anak p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.status-pill {
+  display: inline-block;
+  padding: 6px 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.pill-green {
+  background-color: #2aaf99;
+}
+
+.pill-yellow {
+  background-color: #07ff51;
+  color: black;
+}
+
+.pill-blue {
+  background-color: #028fbb;
+}
+
+.pill-red {
+  background-color: #dc3545;
+}
+
+/* Pagination Style */
+.pagination-vitamin {
+  margin: 15px 0 30px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  font-weight: bold;
+  user-select: none;
+}
+
+.pagination-vitamin span {
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background-color: #e6f7ff;
+  transition: background-color 0.3s;
+}
+
+.pagination-vitamin .page-active {
+  background-color: #2aaf99;
+  color: white;
+}

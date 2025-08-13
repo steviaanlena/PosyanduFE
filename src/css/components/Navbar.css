@@ -1,0 +1,140 @@
+.navbar {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+
+.navbar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1600px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.navbar__logo_container {
+    height: 80px;
+    cursor: pointer;
+}
+
+.navbar__logo {
+    height: 100%;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+
+.navbar__links_lp {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar__links_ortu {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar__links_kader {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar__links_ortu:hover {
+    color: #1F9AB2;
+}
+
+.navbar__links_kader:hover {
+    color: #c4d4d2;
+}
+
+.navbar__links_lp:hover {
+    opacity: 50%;
+}
+
+.selected_ortu {
+    background: linear-gradient(to right, #1F9AB2 0%, #097D9F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.selected_ortu::after {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    content: "";
+    background: linear-gradient(to right, #1F9AB2 0%, #097D9F 100%);
+    bottom: -7px;
+    left: 0;
+    border-radius: 100px;;
+}
+
+.selected_kader {
+    background: linear-gradient(to right, #6A9C89 0%, #0D7C66 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.selected_kader::after {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    content: "";
+    background: linear-gradient(to right, #6A9C89 0%, #0D7C66 100%);
+    bottom: -7px;
+    left: 0;
+    border-radius: 100px;;
+}
+
+.selected_lp {
+    background: linear-gradient(to right, #6a9c89 0%, #097D9F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.selected_lp::after {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    content: "";
+    background: linear-gradient(to right, #6a9c89 0%, #097D9F 100%);
+    bottom: -7px;
+    left: 0;
+    border-radius: 100px;;
+}
+
+
+.navbar__login_button {
+    background: linear-gradient(to right, #6a9c89, #097D9F);
+    color: white;
+    padding: 14px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.navbar__login_button:hover {
+    opacity: 80%;
+    transition: all 0.3s ease;
+}
+
+.profile {
+    height: 20px;
+    width: 20px;
+    background: #000;
+}
+

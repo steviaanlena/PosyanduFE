@@ -1,0 +1,141 @@
+.banner {
+  background-image: url('/src/assets/artikel-kesehatan-bg.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 512px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.banner h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.backBtn {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  background-color: #0077a6;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.backBtn:hover {
+  opacity: 85%;
+}
+
+.whiteToBlueBg {
+    background-image: linear-gradient(#fff 0%, #D0E8F4 100%);
+}
+
+.blueToWhiteBg {
+    background-image: linear-gradient(#D0E8F4 0%, #fff 100%);
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 70px 90px 70px;
+}
+
+.section h2 {
+    text-decoration: none;
+    color: #000;
+    font-size: 45px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1300px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card {
+    background-image: linear-gradient(to bottom, #1F9AB2 0%, #097D9F 100%);
+    color: #fff;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.card p, .card ul {
+    font-size: 16px;
+}
+
+.card h3 {
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+.card ul {
+    padding: 50px 30px 0 30px ;
+}
+
+.card ul li {
+    font-weight: bold;
+}
+
+.dispBlock {
+    display: block;
+    font-weight: 300;
+    margin: 5px 0 25px 0;
+}
+
+.contentContainer {
+    margin-top: 50px;
+}
+
+.rowContent {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    padding: 15px 0;
+    font-size: 1rem;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.rowContent:last-child {
+    border-bottom: none;
+}
+
+.listSpacing {
+    margin: 5px 0;
+}
+
+.listSpacing:first-child {
+    margin: 0 0;
+    margin-top: 15px;
+}
+
+.smallText {
+    font-size: 11px;
+}
+
+.sttBtnContainer {
+    display: flex;
+    justify-content: center;
+    background-color: #D0E8F4;
+    padding-bottom: 20px;
+}

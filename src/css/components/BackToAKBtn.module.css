@@ -1,0 +1,18 @@
+.btn {  
+    position: relative;
+    top: 40px;
+    left: 50px;
+    background-color: #097D9F;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border-color: transparent;
+}
+
+.btn:hover {
+    background-color: #097D9F;
+    opacity: 85%;
+    cursor: pointer;
+}

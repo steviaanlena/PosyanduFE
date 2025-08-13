@@ -1,0 +1,115 @@
+.pageSection {
+    background-image: linear-gradient(#FFFFFF 0%, #7FB2C8 100%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D0E8F4;
+    padding: 70px 200px;
+    margin: 30px 0; 
+    border-radius: 20px;
+    max-height: 950px;
+}
+
+.container h1 {
+    font-size: 2.813rem;
+}
+
+.pfpContainer {
+    max-width: 150px;
+    max-height: 175px;
+    margin: 40px 0;
+    padding: 0;
+}
+
+.profilePicture {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.addPicBtn {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -35px;
+    left: 50px;
+    border-radius: 50%;
+    border: 0;
+    color: white;
+    background-color: #097D9F;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.addPicBtn:hover {
+    background-color: rgb(53, 142, 169);
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 50px;
+    max-width: 800px;
+}
+
+
+.formGroup label {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+}
+
+.formGroup input{
+    border-radius: 10px;
+    padding: 20px 20px;
+    font-size: 1.125rem;
+    height: 50px;
+    margin-top: 5px;
+    border-color: #D4D4D4;
+}
+
+.dropDown {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    font-size: 1.125rem;
+    height: 50px;
+    border-color: #D4D4D4;
+    cursor: pointer;
+}
+
+.submitBtn {
+    border: 0;
+    color: white;
+    background-color: #097D9F;
+    padding: 15px 70px;
+    font-weight: 600;
+    font-size: 1.375rem;
+    border-radius: 50px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    background-color: rgb(53, 142, 169);
+}
+
+
+

@@ -1,13 +1,13 @@
-import navbarLogo from '../assets/posyandu-logo02.png'
+import navbarLogo from '../assets/logo.png'
 import { Link } from 'react-router-dom'
-import '../css/Navbar.css'
+import '../css/components/Navbar.css'
 
 function Navbar({navItems}) {
   return (
     <nav className="navbar">
       <div className="navbar__container">
-        <Link to="/" id="navbar__logo-container">
-          <img src={navbarLogo} alt="Logo Posyandu" id="navbar__logo"/>
+        <Link to="/" className="navbar__logo_container">
+          <img src={navbarLogo} alt="Logo Posyandu" className="navbar__logo"/>
         </Link>
         <ul className="navbar__menu">
             {navItems.map((item) => (

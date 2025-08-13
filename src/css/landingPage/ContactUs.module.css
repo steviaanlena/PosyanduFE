@@ -1,0 +1,66 @@
+.title {
+    background-image: url("/src/assets/bg-contact-us.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    max-height: 960px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title__container {
+    width: 100%;
+    max-width: 1600px;
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+}
+
+    .title__container h1 {
+        font-weight: 900;
+    }
+
+.kontak {
+    background: #fff;
+    height: 50vh;
+    max-height: 960px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kontak__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    width: 100%;
+}
+
+.kontak__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item_icon {
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.item_title {
+    color: #808080;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.item_content {
+    font-weight: bold;
+    color: #1F9AB2;
+    font-size: 25px;
+}

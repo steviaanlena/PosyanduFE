@@ -1,0 +1,240 @@
+/* .BodyDetailAnak {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(#ffffff 0%, #6A9C89 100%);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1366px;
+  margin-top: 50px;
+  background-color: #0D7C66;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  padding: 30px;
+}
+
+.DataAnak-Wrapper {
+  border-radius: 16px;
+  width: 100%;
+  margin: 20px 0;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.SectionTitle {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #0D7C66;
+}
+
+.DataAnak-Container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: space-between;
+}
+
+.DataAnak-Left,
+.DataAnak-Right {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.DataAnak-Left p,
+.DataAnak-Right p {
+  color: black;
+  font-size: 18px;
+  background-color: #f0f0f0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  line-height: 1.4;
+}
+
+h2 {
+  padding-top: 20px;
+  color: #0D7C66;
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.Middle_Container {
+  width: 100%;
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 2px solid #3DA483;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0D7C66;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tabs button:hover {
+  background-color: #3DA483;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.tabs button.active {
+  background-color: #0D7C66;
+  color: white;
+  border-color: #0D7C66;
+}
+
+.content {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.StuntingGraphic {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.StatusStunting,
+.StatusGizi {
+  text-align: center;
+  color: #0D7C66;
+  margin-bottom: 10px;
+}
+
+.Penimbangan_Container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input_penimbangan {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  color: #0D7C66;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.Penimbangan_Container button {
+  align-self: flex-end;
+  padding: 8px 16px;
+  background-color: #0D7C66;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Penimbangan_Container button:hover {
+  background-color: #055f4e;
+}
+
+.Container_Middle {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Table2, .Table3 {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  color: black;
+}
+
+.Table2 th, .Table2 td,
+.Table3 th, .Table3 td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.Table2 th, .Table3 th {
+  background: #6A9C89;
+  font-weight: bold;
+  color: white;
+}
+
+.Table3 td.Gigi {
+  text-align: left;
+}
+
+.Table3 td.Checkbox_Container {
+  text-align: center;
+}
+
+.Kesehatan_button,
+.Obat_Button {
+  display: block;
+  margin-left: auto;
+  margin-top: 10px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Kesehatan_button:hover,
+.Obat_Button:hover {
+  background-color: #c9302c;
+} */

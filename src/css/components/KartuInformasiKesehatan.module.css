@@ -1,0 +1,57 @@
+.kis__container {
+    width: 423px;
+    height: 440px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.kisImage__container {
+    width: 100%;
+    height: 217px;
+}
+
+.kisFotoMenuSehat {
+    width: 100%;
+    height: 100%;
+}
+
+.kisDescription__container {
+    width: 100%;
+    height: 223px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+.kisDescription__container h2 {
+    padding: 0;
+    font-weight: 600;
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+}
+
+.kisDescription__container p {
+    opacity: 33%;
+}
+
+.kis__button {
+    margin-top: 30px;
+    text-decoration: none;
+    border-color: transparent;
+    background-color: #097D9F;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.kis__button:hover{
+    opacity: 80%;
+    transition: all 0.3s ease;
+}
